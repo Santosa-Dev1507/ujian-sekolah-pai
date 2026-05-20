@@ -2,8 +2,30 @@ document.addEventListener("DOMContentLoaded", () => {
     let quizData = [];
     const urlParams = new URLSearchParams(window.location.search);
     let year = urlParams.get('year');
+    let type = urlParams.get('type');
     
-    // Fallback: Jika parameter URL hilang akibat clean-url redirect dari server lokal, ambil dari localStorage
+    // Prioritaskan parameter type dari URL untuk menentukan tahun
+    if (type === 'asas-genap') {
+        year = '2026';
+    } else if (type === 'asts-genap') {
+        year = '2025';
+    } else if (type === 'asas-ganjil' || type === 'asts-ganjil') {
+        year = '2024';
+    }
+
+    // Fallback berdasarkan parameter "type" di localStorage jika URL hilang akibat clean-url redirect
+    if (!year) {
+        let savedType = localStorage.getItem('quizType');
+        if (savedType === 'asas-genap') {
+            year = '2026';
+        } else if (savedType === 'asts-genap') {
+            year = '2025';
+        } else if (savedType === 'asas-ganjil' || savedType === 'asts-ganjil') {
+            year = '2024';
+        }
+    }
+
+    // Fallback terakhir: Jika quizType tidak ada, coba ambil quizYear
     if (!year) {
         year = localStorage.getItem('quizYear');
     }

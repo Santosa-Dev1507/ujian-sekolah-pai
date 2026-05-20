@@ -3,8 +3,8 @@
 <html lang="id"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta name="description" content="Latihan soal interaktif Ujian Sekolah PAI Kelas 9 di Sukses Ujian Sekolah. Bank soal lengkap, timer, dan navigasi soal dinamis untuk persiapan terbaik."/>
-<title>Latihan Soal US PAI 9 - Sukses Ujian Sekolah | Ujian Sekolah</title>
+<meta name="description" content="Latihan soal interaktif Ujian PAI Kelas 8 di Sukses Ujian PAI 8. Bank soal lengkap, timer, dan navigasi soal dinamis untuk persiapan terbaik."/>
+<title>Latihan Soal Ujian PAI 9 - Sukses Ujian PAI 8 | Ujian Sekolah</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
@@ -97,7 +97,7 @@
 <span class="material-symbols-outlined text-white" data-icon="auto_stories">auto_stories</span>
 </div>
 <div>
-<h1 class="text-xl font-headline font-extrabold tracking-tight text-[#006b47]">Sukses Ujian Sekolah</h1>
+<h1 class="text-xl font-headline font-extrabold tracking-tight text-[#006b47]">Sukses Ujian PAI 8</h1>
 <p class="text-[10px] uppercase tracking-widest font-bold text-on-surface-variant/60 -mt-1">Pilih Paket</p>
 </div>
 </div>
@@ -116,41 +116,45 @@
         <p class="text-xl text-on-surface-variant max-w-2xl mx-auto">Tentukan simulasi ujian yang ingin Anda kerjakan. Seluruh daftar ujian disusun terkalibrasi dengan standar terbaru.</p>
     </div>
 
-    <div class="grid md:grid-cols-3 gap-8">
-        <!-- 2024 -->
-        <a href="ruang-ujian.html?year=2024" onclick="localStorage.setItem('quizYear', '2024');" class="group block bg-surface-container-lowest rounded-[2.5rem] p-10 border border-outline-variant/15 shadow-lg hover:shadow-primary/20 hover:border-primary transition-all duration-300">
-            <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-primary transition-colors">
-                <span class="material-symbols-outlined text-primary text-3xl group-hover:text-white" style="font-variation-settings: 'FILL' 1;">history</span>
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- ASTS Ganjil -->
+        <a href="ruang-ujian.html?type=asts-ganjil" onclick="localStorage.setItem('quizType', 'asts-ganjil');" class="group block bg-surface-container-lowest rounded-[2.5rem] p-8 border border-outline-variant/15 shadow-lg hover:shadow-primary/20 hover:border-primary transition-all duration-300">
+            <div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
+                <span class="material-symbols-outlined text-primary text-2xl group-hover:text-white" style="font-variation-settings: 'FILL' 1;">assignment</span>
             </div>
-            <h3 class="text-2xl font-headline font-bold text-on-surface mb-3">Soal ASAJ 2024</h3>
-            <p class="text-on-surface-variant mb-12 leading-relaxed">Paket 45 Butir Soal lengkap dari Ujian Sekolah Pendidikan Agama Islam (ASAJ) yang diujikan secara riil pada tahun ajaran 2023/2024.</p>
-            <span class="inline-flex items-center text-primary font-bold gap-2">Mulai Kerjakan <span class="material-symbols-outlined text-sm">arrow_forward</span></span>
+            <h3 class="text-xl font-headline font-bold text-on-surface mb-2">ASTS Ganjil</h3>
+            <p class="text-on-surface-variant text-sm mb-8 leading-relaxed">Asesmen Sumatif Tengah Semester Ganjil. Termasuk 2 paket soal tahun sebelumnya.</p>
+            <span class="inline-flex items-center text-primary font-bold text-sm gap-2">Mulai <span class="material-symbols-outlined text-xs">arrow_forward</span></span>
         </a>
 
-        <!-- 2025 -->
-        <a href="ruang-ujian.html?year=2025" onclick="localStorage.setItem('quizYear', '2025');" class="relative group block bg-surface-container-lowest rounded-[2.5rem] p-10 border border-outline-variant/15 shadow-xl hover:shadow-primary/20 hover:border-primary transition-all duration-300 transform md:-translate-y-4">
-            <div class="absolute top-0 right-8 -translate-y-1/2">
-                <span class="bg-error text-white text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-widest shadow-sm">Terbaru</span>
+        <!-- ASAS Ganjil -->
+        <a href="ruang-ujian.html?type=asas-ganjil" onclick="localStorage.setItem('quizType', 'asas-ganjil');" class="group block bg-surface-container-lowest rounded-[2.5rem] p-8 border border-outline-variant/15 shadow-lg hover:shadow-primary/20 hover:border-primary transition-all duration-300">
+            <div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
+                <span class="material-symbols-outlined text-primary text-2xl group-hover:text-white" style="font-variation-settings: 'FILL' 1;">assignment_turned_in</span>
             </div>
-            <div class="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center mb-8 group-hover:bg-primary-container transition-colors">
-                <span class="material-symbols-outlined text-white text-3xl" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
-            </div>
-            <h3 class="text-2xl font-headline font-bold text-on-surface mb-3">Soal ASAJ 2025</h3>
-            <p class="text-on-surface-variant mb-12 leading-relaxed">Paket 40 Butir Soal Prediksi & Asli (Draf) sesuai dengan indikator kelulusan yang telah divalidasi MGMP tahun 2024/2025.</p>
-            <span class="inline-flex items-center text-primary font-bold gap-2">Mulai Kerjakan <span class="material-symbols-outlined text-sm">arrow_forward</span></span>
+            <h3 class="text-xl font-headline font-bold text-on-surface mb-2">ASAS Ganjil</h3>
+            <p class="text-on-surface-variant text-sm mb-8 leading-relaxed">Asesmen Sumatif Akhir Semester Ganjil. Termasuk 2 paket soal tahun sebelumnya.</p>
+            <span class="inline-flex items-center text-primary font-bold text-sm gap-2">Mulai <span class="material-symbols-outlined text-xs">arrow_forward</span></span>
         </a>
 
-        <!-- 2026 -->
-        <a href="ruang-ujian.html?year=2026" onclick="localStorage.setItem('quizYear', '2026');" class="relative group block bg-surface-container-lowest rounded-[2.5rem] p-10 border border-outline-variant/15 shadow-xl hover:shadow-primary/20 hover:border-primary transition-all duration-300">
-            <div class="absolute top-0 right-8 -translate-y-1/2">
-                <span class="bg-primary text-white text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-widest shadow-sm">Hot</span>
+        <!-- ASTS Genap -->
+        <a href="ruang-ujian.html?type=asts-genap" onclick="localStorage.setItem('quizType', 'asts-genap');" class="group block bg-surface-container-lowest rounded-[2.5rem] p-8 border border-outline-variant/15 shadow-lg hover:shadow-primary/20 hover:border-primary transition-all duration-300">
+            <div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
+                <span class="material-symbols-outlined text-primary text-2xl group-hover:text-white" style="font-variation-settings: 'FILL' 1;">history_edu</span>
             </div>
-            <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-primary transition-colors">
-                <span class="material-symbols-outlined text-primary text-3xl group-hover:text-white" style="font-variation-settings: 'FILL' 1;">rocket_launch</span>
+            <h3 class="text-xl font-headline font-bold text-on-surface mb-2">ASTS Genap</h3>
+            <p class="text-on-surface-variant text-sm mb-8 leading-relaxed">Asesmen Sumatif Tengah Semester Genap. Termasuk 2 paket soal tahun sebelumnya.</p>
+            <span class="inline-flex items-center text-primary font-bold text-sm gap-2">Mulai <span class="material-symbols-outlined text-xs">arrow_forward</span></span>
+        </a>
+
+        <!-- ASAS Genap -->
+        <a href="ruang-ujian.html?type=asas-genap" onclick="localStorage.setItem('quizType', 'asas-genap');" class="group block bg-surface-container-lowest rounded-[2.5rem] p-8 border border-outline-variant/15 shadow-lg hover:shadow-primary/20 hover:border-primary transition-all duration-300">
+            <div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
+                <span class="material-symbols-outlined text-primary text-2xl group-hover:text-white" style="font-variation-settings: 'FILL' 1;">school</span>
             </div>
-            <h3 class="text-2xl font-headline font-bold text-on-surface mb-3">Prediksi Kisi-Kisi 2026</h3>
-            <p class="text-on-surface-variant mb-12 leading-relaxed">Paket 45 Butir Soal Tingkat Lanjut (HOTS) yang dikembangkan khusus merujuk pada standar silabus kelulusan masa depan.</p>
-            <span class="inline-flex items-center text-primary font-bold gap-2">Mulai Kerjakan <span class="material-symbols-outlined text-sm">arrow_forward</span></span>
+            <h3 class="text-xl font-headline font-bold text-on-surface mb-2">ASAS Genap</h3>
+            <p class="text-on-surface-variant text-sm mb-8 leading-relaxed">Asesmen Sumatif Akhir Semester Genap. Termasuk 2 paket soal tahun sebelumnya.</p>
+            <span class="inline-flex items-center text-primary font-bold text-sm gap-2">Mulai <span class="material-symbols-outlined text-xs">arrow_forward</span></span>
         </a>
     </div>
 </main>
@@ -162,7 +166,7 @@
 <div class="w-10 h-10 bg-primary rounded-xl flex items-center justify-center">
 <span class="material-symbols-outlined text-white" data-icon="auto_stories">auto_stories</span>
 </div>
-<p class="text-2xl font-headline font-extrabold tracking-tight text-[#006b47]">Sukses Ujian Sekolah</p>
+<p class="text-2xl font-headline font-extrabold tracking-tight text-[#006b47]">Sukses Ujian PAI 8</p>
 </div>
 <p class="text-on-surface-variant leading-relaxed max-w-md mb-8">
                     Platform pembelajaran interaktif untuk mendalami materi Pendidikan Agama Islam melalui latihan soal yang komprehensif dan menyenangkan.
@@ -198,7 +202,7 @@
 </div>
 </div>
 <div class="max-w-7xl mx-auto px-6 pt-12 mt-12 border-t border-outline-variant/10 text-center">
-<p class="text-sm text-on-surface-variant/60 font-medium">© 2026 Sukses Ujian Sekolah. Platform Belajar US PAI Kelas 9.</p>
+<p class="text-sm text-on-surface-variant/60 font-medium">© 2026 Sukses Ujian PAI 8. Platform Belajar Ujian PAI Kelas 8.</p>
 </div>
 </footer>
 <script src="js/data.js"></script>
