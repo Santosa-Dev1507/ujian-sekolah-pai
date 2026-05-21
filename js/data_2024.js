@@ -568,5 +568,35 @@ const quizData2024 = [
             "Dampak positif era digital"
         ],
         "kunciJawaban": 7
+    },
+    {
+        "tipe": "uraian",
+        "materi": "ASAS Genap 2024",
+        "pertanyaan": "Perhatikan QS. Al-Baqarah ayat 143 berikut!<br><br>وَكَذَلِكَ جَعَلْنَاكُمْ أُمَّةً وَسَطًا لِّتَكُونُوا شُهَدَاءَ عَلَى النَّاسِ وَيَكُونَ الرَّسُولُ عَلَيْكُمْ شَهِيدًا ۗ وَمَا جَعَلْنَا الْقِبْلَةَ الَّتِي كُنتَ عَلَيْهَا إِلَّا لِنَعْلَمَ مَن يَتَّبِعُ الرَّسُولَ مِمَّن يَنقَلِبُ عَلَىٰ عَقِبَيْهِ ۚ وَإِن كَانَتْ لَكَبِيرَةً إِلَّا عَلَى الَّذِينَ هَدَى اللَّهُ ۗ وَمَا كَانَ اللَّهُ لِيُضِيعَ إِيمَانَكُمْ ۚ إِنَّ اللَّهَ بِالنَّاسِ لَرَءُوفٌ رَّحِيمٌ<br><br>Artinya : \"Demikian pula Kami telah menjadikan kamu (umat Islam) umat pertengahan agar kamu menjadi saksi atas (perbuatan) manusia dan agar Rasul (Nabi Muhammad) menjadi saksi atas (perbuatan) kamu. Kami tidak menetapkan kiblat (Baitulmaqdis) yang (dahulu) kamu berkiblat kepadanya, kecuali agar Kami mengetahui (dalam kenyataan) siapa yang mengikuti Rasul dan siapa yang berbalik ke belakang. Sesungguhnya (pemindahan kiblat) itu sangat berat, kecuali bagi orang yang telah diberi petunjuk oleh Allah. Allah tidak akan menyia-nyiakan imanmu. Sesungguhnya Allah benar-benar Maha Pengasih lagi Maha Penyayang kepada manusia.\"<br><br>Tuliskan kembali QS. Al-Baqarah ayat 143 di atas serta jelaskan isi kandungannya!",
+        "tipsBidang": "Siswa dapat menuliskan kembali ayat tersebut dengan benar. Isi kandungan: 1) Umat Islam adalah umat pertengahan (ummatan wasathan) yang adil dan pilihan. 2) Umat Islam akan menjadi saksi atas perbuatan manusia lain. 3) Ujian perubahan arah kiblat untuk mengetahui siapa yang taat kepada Rasul dan siapa yang ingkar."
+    },
+    {
+        "tipe": "uraian",
+        "materi": "ASAS Genap 2024",
+        "pertanyaan": "Selain memiliki sifat wajib, nabi dan Rasul juga memiliki sifat mustahil, sebutkan sifat mustahil nabi dan rasul beserta artinya!",
+        "tipsBidang": "1. Kidzib (Bohong/Dusta)<br>2. Khianat (Tidak dapat dipercaya/Curang)<br>3. Kitman (Menyembunyikan wahyu)<br>4. Baladah (Bodoh)"
+    },
+    {
+        "tipe": "uraian",
+        "materi": "ASAS Genap 2024",
+        "pertanyaan": "Islam mengajarkan toleransi antar umat beragama. Sikap toleransi dinilai mampu mewujudkan kerukunan baik antar umat beragama maupun suku lainnya. Sebutkan upaya-upaya yang mendorong terjadinya kerukunan tersebut!",
+        "tipsBidang": "Upaya mendorong kerukunan:<br>1. Menghargai dan menghormati hak orang lain.<br>2. Tidak memaksakan kehendak atau keyakinan kepada orang lain.<br>3. Menjaga lisan dan perbuatan agar tidak menyakiti orang yang berbeda keyakinan.<br>4. Mengedepankan sikap saling tolong menolong dalam urusan sosial (muamalah).<br>5. Menerima perbedaan sebagai sunnatullah."
+    },
+    {
+        "tipe": "uraian",
+        "materi": "ASAS Genap 2024",
+        "pertanyaan": "Riba dengan tegas dilarang oleh agama Islam, agar terhindar dari bahaya riba, maka perlu adanya cara untuk menghindari perbuatan tersebut. Sebutkan cara untuk menghindari riba!",
+        "tipsBidang": "Cara menghindari riba:<br>1. Menghindari kebiasaan berhutang, jika terpaksa berhutang tanpa syarat bunga.<br>2. Bertransaksi menggunakan prinsip syariah (menabung/meminjam di bank syariah).<br>3. Bersyukur dengan rezeki yang ada (qana'ah).<br>4. Memahami bahaya dan dosa besar dari perbuatan riba.<br>5. Memperbanyak sedekah."
+    },
+    {
+        "tipe": "uraian",
+        "materi": "ASAS Genap 2024",
+        "pertanyaan": "Dinasti ketiga setelah Rasulullah wafat tumbuh dan berkembang selama setengah abad hingga mencapai puncak peradaban umat Islam dunia. Namun dengan berjalannya waktu dan zaman akhirnya dinasti ini mengalami kemunduran bahkan runtuh. Ada banyak faktor yang mempengaruhi. Sebutkan 4 penyebab Dinasti Abbasiyah runtuh!",
+        "tipsBidang": "Penyebab runtuhnya Daulah Abbasiyah:<br>1. Kepemimpinan yang lemah pada khalifah-khalifah periode akhir.<br>2. Kemunduran di bidang ekonomi dan politik.<br>3. Pemberontakan dan melepaskan diri dari wilayah-wilayah kekuasaan.<br>4. Fanatisme keagamaan dan munculnya berbagai aliran sesat/konflik internal.<br>5. Serangan tentara Mongol yang dipimpin Hulagu Khan ke kota Baghdad."
     }
 ];
