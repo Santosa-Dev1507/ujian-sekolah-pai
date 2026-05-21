@@ -1,4 +1,4 @@
-const quizData2024 = [
+const quizData2024Genap = [
     {
         "tipe": "pg",
         "materi": "ASAS Genap 2024",

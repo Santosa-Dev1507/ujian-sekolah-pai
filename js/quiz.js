@@ -37,8 +37,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (year === '2026' && typeof quizData2026 !== 'undefined') {
         quizData = quizData2026;
-    } else if (year === '2024-genap' && typeof quizData2024 !== 'undefined') {
-        quizData = quizData2024;
+    } else if (year === '2024-genap' && typeof quizData2024Genap !== 'undefined') {
+        quizData = quizData2024Genap;
     } else if (year === '2025' && typeof quizData2025 !== 'undefined') {
         quizData = quizData2025;
     } else if (typeof quizData2024 !== 'undefined') { // Default to 2024
