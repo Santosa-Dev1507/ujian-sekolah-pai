@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     let quizData = [];
+    let isReviewMode = false;
     const urlParams = new URLSearchParams(window.location.search);
     let year = urlParams.get('year');
     let type = urlParams.get('type');
@@ -125,23 +126,63 @@ document.addEventListener("DOMContentLoaded", () => {
                     const btn = document.createElement("button");
                     btn.className = `w-full text-left flex items-start gap-3 md:gap-4 p-4 md:p-6 rounded-3xl transition-all active:scale-[0.98] duration-200 border-2`;
                     
-                    if (isSelected) {
-                        btn.classList.add("bg-primary-fixed", "border-primary", "shadow-[0px_10px_30px_rgba(0,107,71,0.1)]");
+                    if (isReviewMode) {
+                        btn.onclick = null;
+                        btn.classList.add("cursor-default");
+                        const isCorrectKey = q.tipe === 'pga' ? q.kunciJawaban.includes(optIndex) : q.kunciJawaban === optIndex;
+                        
+                        if (isCorrectKey) {
+                            btn.classList.add("bg-green-100", "border-green-500", "shadow-sm");
+                            btn.innerHTML = `
+                                <div class="flex-shrink-0 w-10 h-10 md:w-12 md:h-12 rounded-2xl flex items-center justify-center font-headline font-bold text-base md:text-lg bg-green-500 text-white">
+                                    ${labels[optIndex]}
+                                </div>
+                                <div class="flex-1 mt-1.5 md:mt-2.5 min-w-0">
+                                    <p class="text-green-800 font-bold leading-relaxed break-words whitespace-normal">${optText}</p>
+                                </div>
+                                <span class="material-symbols-outlined text-green-600 mt-1.5 md:mt-2.5 text-xl md:text-2xl" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            `;
+                        } else if (isSelected && !isCorrectKey) {
+                            btn.classList.add("bg-red-50", "border-red-400", "shadow-sm");
+                            btn.innerHTML = `
+                                <div class="flex-shrink-0 w-10 h-10 md:w-12 md:h-12 rounded-2xl flex items-center justify-center font-headline font-bold text-base md:text-lg bg-red-500 text-white">
+                                    ${labels[optIndex]}
+                                </div>
+                                <div class="flex-1 mt-1.5 md:mt-2.5 min-w-0">
+                                    <p class="text-red-700 font-bold leading-relaxed break-words whitespace-normal">${optText}</p>
+                                </div>
+                                <span class="material-symbols-outlined text-red-500 mt-1.5 md:mt-2.5 text-xl md:text-2xl" data-icon="cancel" style="font-variation-settings: 'FILL' 1;">cancel</span>
+                            `;
+                        } else {
+                            btn.classList.add("bg-surface-container-low", "opacity-60", "border-transparent");
+                            btn.innerHTML = `
+                                <div class="flex-shrink-0 w-10 h-10 md:w-12 md:h-12 rounded-2xl flex items-center justify-center font-headline font-bold text-base md:text-lg bg-surface-container-lowest text-on-surface-variant border border-outline-variant/30">
+                                    ${labels[optIndex]}
+                                </div>
+                                <div class="flex-1 mt-1.5 md:mt-2.5 min-w-0">
+                                    <p class="text-on-surface-variant font-medium leading-relaxed break-words whitespace-normal">${optText}</p>
+                                </div>
+                            `;
+                        }
                     } else {
-                        btn.classList.add("bg-surface-container-low", "hover:bg-surface-container-high", "border-transparent");
+                        if (isSelected) {
+                            btn.classList.add("bg-primary-fixed", "border-primary", "shadow-[0px_10px_30px_rgba(0,107,71,0.1)]");
+                        } else {
+                            btn.classList.add("bg-surface-container-low", "hover:bg-surface-container-high", "border-transparent");
+                        }
+
+                        btn.onclick = () => selectAnswer(index, optIndex);
+
+                        btn.innerHTML = `
+                            <div class="flex-shrink-0 w-10 h-10 md:w-12 md:h-12 rounded-2xl flex items-center justify-center font-headline font-bold text-base md:text-lg transition-colors ${isSelected ? 'bg-primary text-white' : 'bg-surface-container-lowest text-on-surface-variant border border-outline-variant/30'}">
+                                ${labels[optIndex]}
+                            </div>
+                            <div class="flex-1 mt-1.5 md:mt-2.5 min-w-0">
+                                <p class="${isSelected ? 'text-on-primary-fixed font-bold' : 'text-on-surface-variant font-medium'} leading-relaxed break-words whitespace-normal">${optText}</p>
+                            </div>
+                            ${isSelected ? `<span class="material-symbols-outlined text-primary mt-1.5 md:mt-2.5 text-xl md:text-2xl" data-icon="${q.tipe === 'pga' ? 'check_box' : 'check_circle'}" style="font-variation-settings: 'FILL' 1;">${q.tipe === 'pga' ? 'check_box' : 'check_circle'}</span>` : ''}
+                        `;
                     }
-
-                    btn.onclick = () => selectAnswer(index, optIndex);
-
-                    btn.innerHTML = `
-                        <div class="flex-shrink-0 w-10 h-10 md:w-12 md:h-12 rounded-2xl flex items-center justify-center font-headline font-bold text-base md:text-lg transition-colors ${isSelected ? 'bg-primary text-white' : 'bg-surface-container-lowest text-on-surface-variant border border-outline-variant/30'}">
-                            ${labels[optIndex]}
-                        </div>
-                        <div class="flex-1 mt-1.5 md:mt-2.5 min-w-0">
-                            <p class="${isSelected ? 'text-on-primary-fixed font-bold' : 'text-on-surface-variant font-medium'} leading-relaxed break-words whitespace-normal">${optText}</p>
-                        </div>
-                        ${isSelected ? `<span class="material-symbols-outlined text-primary mt-1.5 md:mt-2.5 text-xl md:text-2xl" data-icon="${q.tipe === 'pga' ? 'check_box' : 'check_circle'}" style="font-variation-settings: 'FILL' 1;">${q.tipe === 'pga' ? 'check_box' : 'check_circle'}</span>` : ''}
-                    `;
                     dom.optionsGrid.appendChild(btn);
                 });
             } else if (q.tipe === 'menjodohkan') {
@@ -169,13 +210,26 @@ document.addEventListener("DOMContentLoaded", () => {
                 });
                 
                 select.innerHTML = optionsHTML;
-                select.onchange = (e) => {
-                    userAnswers[index] = parseInt(e.target.value);
-                    renderSidebarNav();
-                };
-                
-                container.appendChild(label);
-                container.appendChild(select);
+                if (isReviewMode) {
+                    select.disabled = true;
+                    select.classList.add('opacity-70');
+                    
+                    const correctAns = document.createElement('div');
+                    correctAns.className = 'mt-4 p-4 rounded-xl bg-green-100 border border-green-500 text-green-800 text-sm font-bold flex gap-2 items-start';
+                    correctAns.innerHTML = `<span class="material-symbols-outlined" style="font-size: 1.25rem;">check_circle</span> <div>Jawaban Benar:<br><span class="font-normal">${String.fromCharCode(65 + q.kunciJawaban)}. ${q.opsi[q.kunciJawaban]}</span></div>`;
+                    
+                    select.onchange = null;
+                    container.appendChild(label);
+                    container.appendChild(select);
+                    container.appendChild(correctAns);
+                } else {
+                    select.onchange = (e) => {
+                        userAnswers[index] = parseInt(e.target.value);
+                        renderSidebarNav();
+                    };
+                    container.appendChild(label);
+                    container.appendChild(select);
+                }
                 dom.optionsGrid.appendChild(container);
             }
         }
@@ -291,6 +345,28 @@ document.addEventListener("DOMContentLoaded", () => {
             
             // Tampilkan Modal
             modal.style.display = 'flex';
+            // Bind Review Button
+            const btnReview = document.getElementById('btn-review');
+            if (btnReview) {
+                btnReview.onclick = () => {
+                    isReviewMode = true;
+                    modal.style.display = 'none';
+                    
+                    // Hide timer
+                    const timerUI = document.getElementById('timer-display');
+                    if (timerUI) timerUI.parentElement.parentElement.style.display = 'none';
+                    
+                    // Remove btnSelesai from sidebar if exists
+                    const btnSelesaiSidebar = document.getElementById('btn-selesai-sidebar');
+                    if (btnSelesaiSidebar) btnSelesaiSidebar.style.display = 'none';
+                    
+                    // Go to first question and render
+                    currentQuestionIndex = 0;
+                    renderQuestion(0);
+                    renderSidebarNav();
+                };
+            }
+
             
             // Animasi pop-in
             setTimeout(() => {
