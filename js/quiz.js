@@ -112,36 +112,72 @@ document.addEventListener("DOMContentLoaded", () => {
             
             const labels = ['A', 'B', 'C', 'D', 'E'];
             dom.optionsGrid.innerHTML = "";
-            q.opsi.forEach((optText, optIndex) => {
-                let isSelected = false;
-                if (q.tipe === 'pga') {
-                    isSelected = userAnswers[index].includes(optIndex);
-                } else {
-                    isSelected = userAnswers[index] === optIndex;
-                }
-                
-                const btn = document.createElement("button");
-                btn.className = `w-full text-left flex items-start gap-3 md:gap-4 p-4 md:p-6 rounded-3xl transition-all active:scale-[0.98] duration-200 border-2`;
-                
-                if (isSelected) {
-                    btn.classList.add("bg-primary-fixed", "border-primary", "shadow-[0px_10px_30px_rgba(0,107,71,0.1)]");
-                } else {
-                    btn.classList.add("bg-surface-container-low", "hover:bg-surface-container-high", "border-transparent");
-                }
+            if (q.tipe === 'pg' || q.tipe === 'pga') {
+                dom.optionsGrid.className = "grid grid-cols-1 md:grid-cols-2 gap-4";
+                q.opsi.forEach((optText, optIndex) => {
+                    let isSelected = false;
+                    if (q.tipe === 'pga') {
+                        isSelected = userAnswers[index].includes(optIndex);
+                    } else {
+                        isSelected = userAnswers[index] === optIndex;
+                    }
+                    
+                    const btn = document.createElement("button");
+                    btn.className = `w-full text-left flex items-start gap-3 md:gap-4 p-4 md:p-6 rounded-3xl transition-all active:scale-[0.98] duration-200 border-2`;
+                    
+                    if (isSelected) {
+                        btn.classList.add("bg-primary-fixed", "border-primary", "shadow-[0px_10px_30px_rgba(0,107,71,0.1)]");
+                    } else {
+                        btn.classList.add("bg-surface-container-low", "hover:bg-surface-container-high", "border-transparent");
+                    }
 
-                btn.onclick = () => selectAnswer(index, optIndex);
+                    btn.onclick = () => selectAnswer(index, optIndex);
 
-                btn.innerHTML = `
-                    <div class="flex-shrink-0 w-10 h-10 md:w-12 md:h-12 rounded-2xl flex items-center justify-center font-headline font-bold text-base md:text-lg transition-colors ${isSelected ? 'bg-primary text-white' : 'bg-surface-container-lowest text-on-surface-variant border border-outline-variant/30'}">
-                        ${labels[optIndex]}
-                    </div>
-                    <div class="flex-1 mt-1.5 md:mt-2.5 min-w-0">
-                        <p class="${isSelected ? 'text-on-primary-fixed font-bold' : 'text-on-surface-variant font-medium'} leading-relaxed break-words whitespace-normal">${optText}</p>
-                    </div>
-                    ${isSelected ? `<span class="material-symbols-outlined text-primary mt-1.5 md:mt-2.5 text-xl md:text-2xl" data-icon="${q.tipe === 'pga' ? 'check_box' : 'check_circle'}" style="font-variation-settings: 'FILL' 1;">${q.tipe === 'pga' ? 'check_box' : 'check_circle'}</span>` : ''}
-                `;
-                dom.optionsGrid.appendChild(btn);
-            });
+                    btn.innerHTML = `
+                        <div class="flex-shrink-0 w-10 h-10 md:w-12 md:h-12 rounded-2xl flex items-center justify-center font-headline font-bold text-base md:text-lg transition-colors ${isSelected ? 'bg-primary text-white' : 'bg-surface-container-lowest text-on-surface-variant border border-outline-variant/30'}">
+                            ${labels[optIndex]}
+                        </div>
+                        <div class="flex-1 mt-1.5 md:mt-2.5 min-w-0">
+                            <p class="${isSelected ? 'text-on-primary-fixed font-bold' : 'text-on-surface-variant font-medium'} leading-relaxed break-words whitespace-normal">${optText}</p>
+                        </div>
+                        ${isSelected ? `<span class="material-symbols-outlined text-primary mt-1.5 md:mt-2.5 text-xl md:text-2xl" data-icon="${q.tipe === 'pga' ? 'check_box' : 'check_circle'}" style="font-variation-settings: 'FILL' 1;">${q.tipe === 'pga' ? 'check_box' : 'check_circle'}</span>` : ''}
+                    `;
+                    dom.optionsGrid.appendChild(btn);
+                });
+            } else if (q.tipe === 'menjodohkan') {
+                // Tampilan Khusus Menjodohkan menggunakan Dropdown (Select)
+                dom.optionsGrid.className = "w-full"; // Override grid layout for dropdown
+                
+                const container = document.createElement("div");
+                container.className = "w-full bg-surface-container-low p-6 md:p-8 rounded-[2rem] border border-outline-variant/20";
+                
+                const label = document.createElement("label");
+                label.className = "block text-sm font-bold text-on-surface-variant mb-4 uppercase tracking-widest";
+                label.textContent = "Pilih Pasangan yang Tepat:";
+                
+                const select = document.createElement("select");
+                select.className = "w-full p-5 rounded-2xl border-2 border-outline-variant/30 bg-surface-container-lowest text-on-surface text-base md:text-lg focus:border-primary focus:ring-4 focus:ring-primary/10 transition-all outline-none shadow-sm cursor-pointer appearance-none";
+                select.style.backgroundImage = "url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23006b47%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E')";
+                select.style.backgroundRepeat = "no-repeat";
+                select.style.backgroundPosition = "right 1.5rem top 50%";
+                select.style.backgroundSize = "1rem auto";
+                
+                let optionsHTML = `<option value="" disabled ${userAnswers[index] === null ? 'selected' : ''}>-- Ketuk untuk Memilih Jawaban --</option>`;
+                q.opsi.forEach((optText, optIndex) => {
+                    const letter = String.fromCharCode(65 + optIndex);
+                    optionsHTML += `<option value="${optIndex}" ${userAnswers[index] === optIndex ? 'selected' : ''}>${letter}. ${optText.replace(/<br>/g, ' ')}</option>`;
+                });
+                
+                select.innerHTML = optionsHTML;
+                select.onchange = (e) => {
+                    userAnswers[index] = parseInt(e.target.value);
+                    renderSidebarNav();
+                };
+                
+                container.appendChild(label);
+                container.appendChild(select);
+                dom.optionsGrid.appendChild(container);
+            }
         }
 
         // Render Tips

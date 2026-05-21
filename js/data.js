@@ -2770,124 +2770,214 @@ const quizData2026 = [
         "kunciJawaban": 0
     },
     {
-        "tipe": "pg",
+        "tipe": "menjodohkan",
         "materi": "ASAS Genap Kelas 8 - Menjodohkan",
-        "pertanyaan": "Jodohkan pernyataan berikut dengan pilihan yang tepat!<br><br><b>Pernyataan:</b> Kedudukan umat Islam sebagai umat yang adil, seimbang, proporsional, dan tidak bersikap ekstrem sebagaimana kandungan Q.S. Al-Baqarah ayat 143.",
+        "pertanyaan": "Kedudukan umat Islam sebagai umat yang adil, seimbang, proporsional, dan tidak bersikap ekstrem sebagaimana kandungan Q.S. Al-Baqarah ayat 143.",
         "opsi": [
             "*Mubasysyirin wa Mundzirin* (Pembawa kabar gembira dan pemberi peringatan)",
             "Abu Ja'far Al-Mansur",
-            "*Ummatan Wasathan* (Umat pertengahan/moderat)",
-            "*Idgham Mimi*"
-        ],
-        "kunciJawaban": 2
-    },
-    {
-        "tipe": "pg",
-        "materi": "ASAS Genap Kelas 8 - Menjodohkan",
-        "pertanyaan": "Jodohkan pernyataan berikut dengan pilihan yang tepat!<br><br><b>Pernyataan:</b> Hukum tajwid yang terjadi apabila huruf *mim sukun* (مْ) bertemu dengan huruf *ba'* (ب), cara membacanya harus disamarkan di bibir dan berdengung.",
-        "opsi": [
             "*Ikhfa Syafawi*",
+            "Mengganggu, melarang, atau merusak kegiatan ibadah umat agama lain",
             "Riba *Nasi'ah*",
             "Harun Ar-Rasyid",
-            "Riba *Qardh*"
-        ],
-        "kunciJawaban": 0
-    },
-    {
-        "tipe": "pg",
-        "materi": "ASAS Genap Kelas 8 - Menjodohkan",
-        "pertanyaan": "Jodohkan pernyataan berikut dengan pilihan yang tepat!<br><br><b>Pernyataan:</b> Berdasarkan dalil naqli Al-Qur'an, tugas pokok diutusnya para Nabi dan Rasul kepada umat manusia di dunia adalah sebagai ....",
-        "opsi": [
-            "*Mubasysyirin wa Mundzirin* (Pembawa kabar gembira dan pemberi peringatan)",
-            "*Ikhfa Syafawi*",
-            "Mengganggu, melarang, atau merusak kegiatan ibadah umat agama lain",
-            "Riba *Nasi'ah*"
-        ],
-        "kunciJawaban": 0
-    },
-    {
-        "tipe": "pg",
-        "materi": "ASAS Genap Kelas 8 - Menjodohkan",
-        "pertanyaan": "Jodohkan pernyataan berikut dengan pilihan yang tepat!<br><br><b>Pernyataan:</b> Mukjizat fisik yang dianugerahkan Allah Swt. kepada Rasul Ulul Azmi, yakni Nabi Musa a.s. ketika menghadapi kesombongan Raja Fir'aun.",
-        "opsi": [
-            "Abu Ja'far Al-Mansur",
-            "Tongkat dapat berubah menjadi ular raksasa dan mampu membelah lautan",
-            "*Ummatan Wasathan* (Umat pertengahan/moderat)",
-            "*Idgham Mimi*"
-        ],
-        "kunciJawaban": 1
-    },
-    {
-        "tipe": "pg",
-        "materi": "ASAS Genap Kelas 8 - Menjodohkan",
-        "pertanyaan": "Jodohkan pernyataan berikut dengan pilihan yang tepat!<br><br><b>Pernyataan:</b> Kandungan Q.S. Yunus ayat 41 yang menjadi salah satu prinsip dasar toleransi dalam Islam saat menyikapi perbedaan keyakinan.",
-        "opsi": [
-            "*Mubasysyirin wa Mundzirin* (Pembawa kabar gembira dan pemberi peringatan)",
             "\"Bagiku pekerjaanku (amalku) dan bagimu pekerjaanmu (amalmu)\"",
             "Kebajikan dan takwa (*Al-Birr wat-Taqwa*)",
-            "Jabir bin Hayyan"
+            "Tongkat dapat berubah menjadi ular raksasa dan mampu membelah lautan",
+            "*Ummatan Wasathan* (Umat pertengahan/moderat)",
+            "Jabir bin Hayyan",
+            "*Idgham Mimi*",
+            "Riba *Qardh*"
         ],
-        "kunciJawaban": 1
+        "kunciJawaban": 9
     },
     {
-        "tipe": "pg",
+        "tipe": "menjodohkan",
         "materi": "ASAS Genap Kelas 8 - Menjodohkan",
-        "pertanyaan": "Jodohkan pernyataan berikut dengan pilihan yang tepat!<br><br><b>Pernyataan:</b> Salah satu contoh perilaku intoleran dalam kehidupan bermasyarakat yang dapat merusak kerukunan dan sangat dilarang dalam agama.",
+        "pertanyaan": "Hukum tajwid yang terjadi apabila huruf *mim sukun* (مْ) bertemu dengan huruf *ba'* (ب), cara membacanya harus disamarkan di bibir dan berdengung.",
         "opsi": [
             "*Mubasysyirin wa Mundzirin* (Pembawa kabar gembira dan pemberi peringatan)",
             "Abu Ja'far Al-Mansur",
-            "Mengganggu, melarang, atau merusak kegiatan ibadah umat agama lain",
-            "Riba *Nasi'ah*"
-        ],
-        "kunciJawaban": 2
-    },
-    {
-        "tipe": "pg",
-        "materi": "ASAS Genap Kelas 8 - Menjodohkan",
-        "pertanyaan": "Jodohkan pernyataan berikut dengan pilihan yang tepat!<br><br><b>Pernyataan:</b> Berdasarkan pesan dalam Q.S. Al-Ma'idah ayat 2, Allah Swt. sangat memerintahkan umat-Nya untuk tolong-menolong dalam urusan ....",
-        "opsi": [
-            "Mengganggu, melarang, atau merusak kegiatan ibadah umat agama lain",
-            "Kebajikan dan takwa (*Al-Birr wat-Taqwa*)",
-            "*Ummatan Wasathan* (Umat pertengahan/moderat)",
-            "Jabir bin Hayyan"
-        ],
-        "kunciJawaban": 1
-    },
-    {
-        "tipe": "pg",
-        "materi": "ASAS Genap Kelas 8 - Menjodohkan",
-        "pertanyaan": "Jodohkan pernyataan berikut dengan pilihan yang tepat!<br><br><b>Pernyataan:</b> Jenis riba yang terjadi karena adanya tambahan jumlah pembayaran utang yang dibebankan akibat penundaan atau penangguhan waktu pelunasan.",
-        "opsi": [
-            "*Mubasysyirin wa Mundzirin* (Pembawa kabar gembira dan pemberi peringatan)",
+            "*Ikhfa Syafawi*",
             "Mengganggu, melarang, atau merusak kegiatan ibadah umat agama lain",
             "Riba *Nasi'ah*",
-            "*Ummatan Wasathan* (Umat pertengahan/moderat)"
+            "Harun Ar-Rasyid",
+            "\"Bagiku pekerjaanku (amalku) dan bagimu pekerjaanmu (amalmu)\"",
+            "Kebajikan dan takwa (*Al-Birr wat-Taqwa*)",
+            "Tongkat dapat berubah menjadi ular raksasa dan mampu membelah lautan",
+            "*Ummatan Wasathan* (Umat pertengahan/moderat)",
+            "Jabir bin Hayyan",
+            "*Idgham Mimi*",
+            "Riba *Qardh*"
         ],
         "kunciJawaban": 2
     },
     {
-        "tipe": "pg",
+        "tipe": "menjodohkan",
         "materi": "ASAS Genap Kelas 8 - Menjodohkan",
-        "pertanyaan": "Jodohkan pernyataan berikut dengan pilihan yang tepat!<br><br><b>Pernyataan:</b> Khalifah Daulah Abbasiyah yang membangun kota Baghdad dengan tata ruang bundar yang indah dan menjadikannya sebagai ibu kota peradaban dunia.",
+        "pertanyaan": "Berdasarkan dalil naqli Al-Qur'an, tugas pokok diutusnya para Nabi dan Rasul kepada umat manusia di dunia adalah sebagai ....",
         "opsi": [
+            "*Mubasysyirin wa Mundzirin* (Pembawa kabar gembira dan pemberi peringatan)",
             "Abu Ja'far Al-Mansur",
+            "*Ikhfa Syafawi*",
+            "Mengganggu, melarang, atau merusak kegiatan ibadah umat agama lain",
+            "Riba *Nasi'ah*",
+            "Harun Ar-Rasyid",
+            "\"Bagiku pekerjaanku (amalku) dan bagimu pekerjaanmu (amalmu)\"",
+            "Kebajikan dan takwa (*Al-Birr wat-Taqwa*)",
+            "Tongkat dapat berubah menjadi ular raksasa dan mampu membelah lautan",
             "*Ummatan Wasathan* (Umat pertengahan/moderat)",
+            "Jabir bin Hayyan",
             "*Idgham Mimi*",
             "Riba *Qardh*"
         ],
         "kunciJawaban": 0
     },
     {
-        "tipe": "pg",
+        "tipe": "menjodohkan",
         "materi": "ASAS Genap Kelas 8 - Menjodohkan",
-        "pertanyaan": "Jodohkan pernyataan berikut dengan pilihan yang tepat!<br><br><b>Pernyataan:</b> Ilmuwan muslim terkemuka pada masa Bani Abbasiyah yang diakui sebagai \"Bapak Ilmu Kimia\" atas karya dan penemuannya dalam metode penyulingan (distilasi).",
+        "pertanyaan": "Mukjizat fisik yang dianugerahkan Allah Swt. kepada Rasul Ulul Azmi, yakni Nabi Musa a.s. ketika menghadapi kesombongan Raja Fir'aun.",
         "opsi": [
+            "*Mubasysyirin wa Mundzirin* (Pembawa kabar gembira dan pemberi peringatan)",
+            "Abu Ja'far Al-Mansur",
+            "*Ikhfa Syafawi*",
             "Mengganggu, melarang, atau merusak kegiatan ibadah umat agama lain",
+            "Riba *Nasi'ah*",
+            "Harun Ar-Rasyid",
             "\"Bagiku pekerjaanku (amalku) dan bagimu pekerjaanmu (amalmu)\"",
             "Kebajikan dan takwa (*Al-Birr wat-Taqwa*)",
-            "Jabir bin Hayyan"
+            "Tongkat dapat berubah menjadi ular raksasa dan mampu membelah lautan",
+            "*Ummatan Wasathan* (Umat pertengahan/moderat)",
+            "Jabir bin Hayyan",
+            "*Idgham Mimi*",
+            "Riba *Qardh*"
+        ],
+        "kunciJawaban": 8
+    },
+    {
+        "tipe": "menjodohkan",
+        "materi": "ASAS Genap Kelas 8 - Menjodohkan",
+        "pertanyaan": "Kandungan Q.S. Yunus ayat 41 yang menjadi salah satu prinsip dasar toleransi dalam Islam saat menyikapi perbedaan keyakinan.",
+        "opsi": [
+            "*Mubasysyirin wa Mundzirin* (Pembawa kabar gembira dan pemberi peringatan)",
+            "Abu Ja'far Al-Mansur",
+            "*Ikhfa Syafawi*",
+            "Mengganggu, melarang, atau merusak kegiatan ibadah umat agama lain",
+            "Riba *Nasi'ah*",
+            "Harun Ar-Rasyid",
+            "\"Bagiku pekerjaanku (amalku) dan bagimu pekerjaanmu (amalmu)\"",
+            "Kebajikan dan takwa (*Al-Birr wat-Taqwa*)",
+            "Tongkat dapat berubah menjadi ular raksasa dan mampu membelah lautan",
+            "*Ummatan Wasathan* (Umat pertengahan/moderat)",
+            "Jabir bin Hayyan",
+            "*Idgham Mimi*",
+            "Riba *Qardh*"
+        ],
+        "kunciJawaban": 6
+    },
+    {
+        "tipe": "menjodohkan",
+        "materi": "ASAS Genap Kelas 8 - Menjodohkan",
+        "pertanyaan": "Salah satu contoh perilaku intoleran dalam kehidupan bermasyarakat yang dapat merusak kerukunan dan sangat dilarang dalam agama.",
+        "opsi": [
+            "*Mubasysyirin wa Mundzirin* (Pembawa kabar gembira dan pemberi peringatan)",
+            "Abu Ja'far Al-Mansur",
+            "*Ikhfa Syafawi*",
+            "Mengganggu, melarang, atau merusak kegiatan ibadah umat agama lain",
+            "Riba *Nasi'ah*",
+            "Harun Ar-Rasyid",
+            "\"Bagiku pekerjaanku (amalku) dan bagimu pekerjaanmu (amalmu)\"",
+            "Kebajikan dan takwa (*Al-Birr wat-Taqwa*)",
+            "Tongkat dapat berubah menjadi ular raksasa dan mampu membelah lautan",
+            "*Ummatan Wasathan* (Umat pertengahan/moderat)",
+            "Jabir bin Hayyan",
+            "*Idgham Mimi*",
+            "Riba *Qardh*"
         ],
         "kunciJawaban": 3
+    },
+    {
+        "tipe": "menjodohkan",
+        "materi": "ASAS Genap Kelas 8 - Menjodohkan",
+        "pertanyaan": "Berdasarkan pesan dalam Q.S. Al-Ma'idah ayat 2, Allah Swt. sangat memerintahkan umat-Nya untuk tolong-menolong dalam urusan ....",
+        "opsi": [
+            "*Mubasysyirin wa Mundzirin* (Pembawa kabar gembira dan pemberi peringatan)",
+            "Abu Ja'far Al-Mansur",
+            "*Ikhfa Syafawi*",
+            "Mengganggu, melarang, atau merusak kegiatan ibadah umat agama lain",
+            "Riba *Nasi'ah*",
+            "Harun Ar-Rasyid",
+            "\"Bagiku pekerjaanku (amalku) dan bagimu pekerjaanmu (amalmu)\"",
+            "Kebajikan dan takwa (*Al-Birr wat-Taqwa*)",
+            "Tongkat dapat berubah menjadi ular raksasa dan mampu membelah lautan",
+            "*Ummatan Wasathan* (Umat pertengahan/moderat)",
+            "Jabir bin Hayyan",
+            "*Idgham Mimi*",
+            "Riba *Qardh*"
+        ],
+        "kunciJawaban": 7
+    },
+    {
+        "tipe": "menjodohkan",
+        "materi": "ASAS Genap Kelas 8 - Menjodohkan",
+        "pertanyaan": "Jenis riba yang terjadi karena adanya tambahan jumlah pembayaran utang yang dibebankan akibat penundaan atau penangguhan waktu pelunasan.",
+        "opsi": [
+            "*Mubasysyirin wa Mundzirin* (Pembawa kabar gembira dan pemberi peringatan)",
+            "Abu Ja'far Al-Mansur",
+            "*Ikhfa Syafawi*",
+            "Mengganggu, melarang, atau merusak kegiatan ibadah umat agama lain",
+            "Riba *Nasi'ah*",
+            "Harun Ar-Rasyid",
+            "\"Bagiku pekerjaanku (amalku) dan bagimu pekerjaanmu (amalmu)\"",
+            "Kebajikan dan takwa (*Al-Birr wat-Taqwa*)",
+            "Tongkat dapat berubah menjadi ular raksasa dan mampu membelah lautan",
+            "*Ummatan Wasathan* (Umat pertengahan/moderat)",
+            "Jabir bin Hayyan",
+            "*Idgham Mimi*",
+            "Riba *Qardh*"
+        ],
+        "kunciJawaban": 4
+    },
+    {
+        "tipe": "menjodohkan",
+        "materi": "ASAS Genap Kelas 8 - Menjodohkan",
+        "pertanyaan": "Khalifah Daulah Abbasiyah yang membangun kota Baghdad dengan tata ruang bundar yang indah dan menjadikannya sebagai ibu kota peradaban dunia.",
+        "opsi": [
+            "*Mubasysyirin wa Mundzirin* (Pembawa kabar gembira dan pemberi peringatan)",
+            "Abu Ja'far Al-Mansur",
+            "*Ikhfa Syafawi*",
+            "Mengganggu, melarang, atau merusak kegiatan ibadah umat agama lain",
+            "Riba *Nasi'ah*",
+            "Harun Ar-Rasyid",
+            "\"Bagiku pekerjaanku (amalku) dan bagimu pekerjaanmu (amalmu)\"",
+            "Kebajikan dan takwa (*Al-Birr wat-Taqwa*)",
+            "Tongkat dapat berubah menjadi ular raksasa dan mampu membelah lautan",
+            "*Ummatan Wasathan* (Umat pertengahan/moderat)",
+            "Jabir bin Hayyan",
+            "*Idgham Mimi*",
+            "Riba *Qardh*"
+        ],
+        "kunciJawaban": 1
+    },
+    {
+        "tipe": "menjodohkan",
+        "materi": "ASAS Genap Kelas 8 - Menjodohkan",
+        "pertanyaan": "Ilmuwan muslim terkemuka pada masa Bani Abbasiyah yang diakui sebagai \"Bapak Ilmu Kimia\" atas karya dan penemuannya dalam metode penyulingan (distilasi).",
+        "opsi": [
+            "*Mubasysyirin wa Mundzirin* (Pembawa kabar gembira dan pemberi peringatan)",
+            "Abu Ja'far Al-Mansur",
+            "*Ikhfa Syafawi*",
+            "Mengganggu, melarang, atau merusak kegiatan ibadah umat agama lain",
+            "Riba *Nasi'ah*",
+            "Harun Ar-Rasyid",
+            "\"Bagiku pekerjaanku (amalku) dan bagimu pekerjaanmu (amalmu)\"",
+            "Kebajikan dan takwa (*Al-Birr wat-Taqwa*)",
+            "Tongkat dapat berubah menjadi ular raksasa dan mampu membelah lautan",
+            "*Ummatan Wasathan* (Umat pertengahan/moderat)",
+            "Jabir bin Hayyan",
+            "*Idgham Mimi*",
+            "Riba *Qardh*"
+        ],
+        "kunciJawaban": 10
     },
     {
         "tipe": "uraian",
