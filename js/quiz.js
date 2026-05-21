@@ -121,7 +121,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
                 
                 const btn = document.createElement("button");
-                btn.className = `w-full text-left flex items-start gap-4 p-6 rounded-3xl transition-all active:scale-[0.98] duration-200 border-2`;
+                btn.className = `w-full text-left flex items-start gap-3 md:gap-4 p-4 md:p-6 rounded-3xl transition-all active:scale-[0.98] duration-200 border-2`;
                 
                 if (isSelected) {
                     btn.classList.add("bg-primary-fixed", "border-primary", "shadow-[0px_10px_30px_rgba(0,107,71,0.1)]");
@@ -132,13 +132,13 @@ document.addEventListener("DOMContentLoaded", () => {
                 btn.onclick = () => selectAnswer(index, optIndex);
 
                 btn.innerHTML = `
-                    <div class="flex-shrink-0 w-12 h-12 rounded-2xl flex items-center justify-center font-headline font-bold text-lg transition-colors ${isSelected ? 'bg-primary text-white' : 'bg-surface-container-lowest text-on-surface-variant border border-outline-variant/30'}">
+                    <div class="flex-shrink-0 w-10 h-10 md:w-12 md:h-12 rounded-2xl flex items-center justify-center font-headline font-bold text-base md:text-lg transition-colors ${isSelected ? 'bg-primary text-white' : 'bg-surface-container-lowest text-on-surface-variant border border-outline-variant/30'}">
                         ${labels[optIndex]}
                     </div>
-                    <div class="flex-1 mt-2.5">
-                        <p class="${isSelected ? 'text-on-primary-fixed font-bold' : 'text-on-surface-variant font-medium'} leading-relaxed">${optText}</p>
+                    <div class="flex-1 mt-1.5 md:mt-2.5 min-w-0">
+                        <p class="${isSelected ? 'text-on-primary-fixed font-bold' : 'text-on-surface-variant font-medium'} leading-relaxed break-words whitespace-normal">${optText}</p>
                     </div>
-                    ${isSelected ? `<span class="material-symbols-outlined text-primary mt-2.5 text-2xl" data-icon="${q.tipe === 'pga' ? 'check_box' : 'check_circle'}" style="font-variation-settings: 'FILL' 1;">${q.tipe === 'pga' ? 'check_box' : 'check_circle'}</span>` : ''}
+                    ${isSelected ? `<span class="material-symbols-outlined text-primary mt-1.5 md:mt-2.5 text-xl md:text-2xl" data-icon="${q.tipe === 'pga' ? 'check_box' : 'check_circle'}" style="font-variation-settings: 'FILL' 1;">${q.tipe === 'pga' ? 'check_box' : 'check_circle'}</span>` : ''}
                 `;
                 dom.optionsGrid.appendChild(btn);
             });

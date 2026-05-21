@@ -140,13 +140,13 @@
 </section>
 
 <!-- Question Card -->
-<article class="bg-surface-container-lowest rounded-[2.5rem] p-8 md:p-12 shadow-[0px_40px_80px_rgba(27,28,26,0.04)] border border-outline-variant/15 mb-8">
-<div class="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-1.5 rounded-xl mb-8">
+<article class="bg-surface-container-lowest rounded-[2.5rem] p-5 sm:p-6 md:p-12 shadow-[0px_40px_80px_rgba(27,28,26,0.04)] border border-outline-variant/15 mb-8 w-full overflow-hidden">
+<div class="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-1.5 rounded-xl mb-6 md:mb-8">
 <span class="material-symbols-outlined text-[20px]" data-icon="menu_book" style="font-variation-settings: 'FILL' 1;">menu_book</span>
-<span id="q-materi-label" class="text-xs font-bold uppercase tracking-[0.15em]">Materi</span>
+<span id="q-materi-label" class="text-[10px] md:text-xs font-bold uppercase tracking-[0.15em]">Materi</span>
 </div>
 
-<p id="q-text" class="text-on-surface text-xl md:text-2xl leading-[1.6] font-semibold mb-10">
+<p id="q-text" class="text-on-surface text-lg sm:text-xl md:text-2xl leading-[1.6] font-semibold mb-8 md:mb-10 break-words">
     Loading Pertanyaan...
 </p>
 
@@ -168,14 +168,14 @@
 </div>
 
 <!-- Navigation Buttons -->
-<div class="flex justify-between items-center mt-12 pt-8 border-t border-outline-variant/10">
-<button id="btn-prev" class="flex items-center gap-3 text-on-surface font-bold py-3 px-8 rounded-2xl hover:bg-surface-container-high transition-colors">
-<span class="material-symbols-outlined" data-icon="arrow_back">arrow_back</span>
-<span>Sebelumnya</span>
+<div class="flex justify-between items-center mt-8 md:mt-12 pt-6 md:pt-8 border-t border-outline-variant/10 gap-2">
+<button id="btn-prev" class="flex items-center justify-center gap-1 md:gap-3 text-on-surface font-bold py-3 px-3 sm:px-4 md:px-8 rounded-2xl hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-[20px] md:text-[24px]" data-icon="arrow_back">arrow_back</span>
+<span class="text-sm md:text-base">Sebelumnya</span>
 </button>
-<button id="btn-next" class="flex items-center gap-3 bg-primary text-white font-bold py-3 px-10 rounded-2xl shadow-lg shadow-primary/20 hover:bg-primary-container transition-all active:scale-95">
-<span>Selanjutnya</span>
-<span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+<button id="btn-next" class="flex items-center justify-center gap-1 md:gap-3 bg-primary text-white font-bold py-3 px-4 sm:px-6 md:px-10 rounded-2xl shadow-lg shadow-primary/20 hover:bg-primary-container transition-all active:scale-95 flex-shrink-0 max-w-[50%]">
+<span class="text-sm md:text-base truncate">Selanjutnya</span>
+<span class="material-symbols-outlined text-[20px] md:text-[24px]" data-icon="arrow_forward">arrow_forward</span>
 </button>
 </div>
 </article>
