@@ -271,4 +271,60 @@
 </footer>
 <script src="js/data.js"></script>
 <script src="js/quiz.js"></script>
+<!-- Modal Hasil Ujian -->
+<div id="result-modal" class="fixed inset-0 z-[100] hidden items-center justify-center">
+    <!-- Backdrop -->
+    <div class="absolute inset-0 bg-black/60 backdrop-blur-sm transition-opacity"></div>
+    
+    <!-- Modal Content -->
+    <div class="relative bg-surface-container-lowest rounded-3xl p-8 max-w-md w-[90%] md:w-full mx-auto shadow-2xl transform scale-95 opacity-0 transition-all duration-300" id="result-modal-content">
+        
+        <div class="text-center space-y-6">
+            <!-- Icon -->
+            <div class="w-20 h-20 bg-primary-container text-on-primary-container rounded-full flex items-center justify-center mx-auto mb-4 ring-8 ring-primary/10">
+                <span class="material-symbols-outlined text-4xl" data-icon="emoji_events">emoji_events</span>
+            </div>
+            
+            <!-- Title -->
+            <div>
+                <h2 class="text-2xl font-bold text-on-surface mb-1">Ujian Selesai!</h2>
+                <p class="text-on-surface-variant text-sm">Berikut adalah hasil simulasi Anda</p>
+            </div>
+            
+            <!-- Score Display -->
+            <div class="bg-surface-container rounded-2xl p-6 border border-outline-variant/20">
+                <p class="text-sm font-medium text-on-surface-variant uppercase tracking-wider mb-2">Nilai Obyektif</p>
+                <div class="flex items-baseline justify-center gap-1 text-primary">
+                    <span class="text-6xl font-black tracking-tight" id="result-score">0</span>
+                    <span class="text-2xl font-bold">/100</span>
+                </div>
+            </div>
+            
+            <!-- Stats Breakdown -->
+            <div class="grid grid-cols-2 gap-4 text-left">
+                <div class="bg-surface-container-low rounded-xl p-4 border border-outline-variant/10">
+                    <p class="text-xs text-on-surface-variant mb-1">Total Benar</p>
+                    <p class="text-lg font-bold text-on-surface"><span id="result-correct" class="text-green-600">0</span> <span class="text-sm font-normal text-on-surface-variant">soal</span></p>
+                </div>
+                <div class="bg-surface-container-low rounded-xl p-4 border border-outline-variant/10">
+                    <p class="text-xs text-on-surface-variant mb-1">Total Soal PG</p>
+                    <p class="text-lg font-bold text-on-surface"><span id="result-total">0</span> <span class="text-sm font-normal text-on-surface-variant">soal</span></p>
+                </div>
+            </div>
+            
+            <!-- Essay Note -->
+            <div id="result-essay-note" class="text-sm text-secondary italic px-4 py-3 bg-secondary-container/30 rounded-xl hidden">
+                Catatan: Soal uraian tidak dinilai otomatis oleh sistem.
+            </div>
+            
+            <!-- Action Button -->
+            <div class="pt-4">
+                <a href="latihan-soal.html" class="flex items-center justify-center w-full gap-2 bg-primary text-on-primary py-4 rounded-xl font-bold hover:bg-primary/90 transition-all active:scale-[0.98] shadow-lg shadow-primary/25">
+                    <span class="material-symbols-outlined" data-icon="home">home</span>
+                    Kembali ke Menu Utama
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
 </body></html>
