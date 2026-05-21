@@ -224,7 +224,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 if (userAnswers[i] === q.kunciJawaban) score++;
             } else if (q.tipe === 'pga') {
                 totalPG++;
-                const userArr = [...userAnswers[i]].sort();
+                const userArr = Array.isArray(userAnswers[i]) ? [...userAnswers[i]].sort() : [];
                 const keyArr = Array.isArray(q.kunciJawaban) ? [...q.kunciJawaban].sort() : [];
                 if (userArr.length === keyArr.length && userArr.every((v, idx) => v === keyArr[idx])) {
                     score++;
@@ -235,15 +235,37 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
         const nilaiObjektif = totalPG > 0 ? Math.round((score / totalPG) * 100) : 0;
-        const essayNote = essayCount > 0
-            ? `\n\nCatatan: ${essayCount} soal uraian tidak dinilai otomatis.`
-            : '';
-
-        alert(
-            `✅ Ujian Selesai!\n\nNilai Obyektif (PG & PGA): ${nilaiObjektif}\n` +
-            `(${score} benar dari ${totalPG} soal obyektif)` +
-            essayNote
-        );
+        
+        // Update Modal UI
+        const modal = document.getElementById('result-modal');
+        const modalContent = document.getElementById('result-modal-content');
+        
+        if (modal && modalContent) {
+            document.getElementById('result-score').textContent = nilaiObjektif;
+            document.getElementById('result-correct').textContent = score;
+            document.getElementById('result-total').textContent = totalPG;
+            
+            const essayNote = document.getElementById('result-essay-note');
+            if (essayCount > 0) {
+                essayNote.textContent = `Catatan: ${essayCount} soal uraian tidak dinilai otomatis oleh sistem.`;
+                essayNote.style.display = 'block';
+            } else {
+                essayNote.style.display = 'none';
+            }
+            
+            // Tampilkan Modal
+            modal.style.display = 'flex';
+            
+            // Animasi pop-in
+            setTimeout(() => {
+                modalContent.classList.remove('scale-95', 'opacity-0');
+                modalContent.classList.add('scale-100', 'opacity-100');
+            }, 50);
+        } else {
+            // Fallback jika HTML modal belum ter-load (safeguard)
+            const essayText = essayCount > 0 ? `\\n\\nCatatan: ${essayCount} soal uraian tidak dinilai otomatis.` : '';
+            alert(`✅ Ujian Selesai!\\n\\nNilai Obyektif (PG & PGA): ${nilaiObjektif}\\n(${score} benar dari ${totalPG} soal obyektif)${essayText}`);
+        }
     }
 
     // Expose ke global agar bisa dipanggil dari tombol inline HTML
