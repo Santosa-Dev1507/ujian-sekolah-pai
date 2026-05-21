@@ -8,6 +8,8 @@ document.addEventListener("DOMContentLoaded", () => {
     // Prioritaskan parameter type dari URL untuk menentukan tahun
     if (type === 'asas-genap') {
         year = '2026';
+    } else if (type === 'asas-genap-2024') {
+        year = '2024-genap';
     } else if (type === 'asts-genap') {
         year = '2025';
     } else if (type === 'asas-ganjil' || type === 'asts-ganjil') {
@@ -19,6 +21,8 @@ document.addEventListener("DOMContentLoaded", () => {
         let savedType = localStorage.getItem('quizType');
         if (savedType === 'asas-genap') {
             year = '2026';
+        } else if (savedType === 'asas-genap-2024') {
+            year = '2024-genap';
         } else if (savedType === 'asts-genap') {
             year = '2025';
         } else if (savedType === 'asas-ganjil' || savedType === 'asts-ganjil') {
@@ -33,6 +37,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (year === '2026' && typeof quizData2026 !== 'undefined') {
         quizData = quizData2026;
+    } else if (year === '2024-genap' && typeof quizData2024 !== 'undefined') {
+        quizData = quizData2024;
     } else if (year === '2025' && typeof quizData2025 !== 'undefined') {
         quizData = quizData2025;
     } else if (typeof quizData2024 !== 'undefined') { // Default to 2024
